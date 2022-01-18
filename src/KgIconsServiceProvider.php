@@ -13,13 +13,14 @@ class KgIconsServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Javascript & SVG assets
+        // Javascript, css, and svg assets
         $this->publishes([
-            __DIR__ . '/../resources/assets' => public_path('heroicons/assets'),
-            __DIR__ . '/../resources/heroicons/optimized' => public_path('heroicons/icons'),
+            __DIR__ . '/../resources/js' => public_path('kgicons'),
+            __DIR__ . '/../resources/css' => public_path('kgicons'),
+            __DIR__ . '/../resources/providers' => public_path('kgicons/ic'),
         ], 'assets');
 
         // <x-hero::icon /> </x-hero::icon>
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'hero');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'kgicon');
     }
 }
