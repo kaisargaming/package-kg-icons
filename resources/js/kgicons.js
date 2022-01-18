@@ -28,9 +28,11 @@ const insertPath = (svgText, el) => {
     // Standard style
     el.style.display = 'inline'
 
-    newEl.querySelector('svg').childNodes.forEach(c => {
-        el.appendChild(c)
-    })
+    let sv = newEl.querySelector('svg')
+
+    for (let i = 0; i < newEl.childNodes.length; i++) {
+        el.appendChild(sv.children[i])
+    }
 }
 
 const getKgIconsStyle = () => {

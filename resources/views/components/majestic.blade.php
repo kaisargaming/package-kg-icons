@@ -5,7 +5,7 @@
     'stroke' => 'currentColor' ])
 
 <svg
-    id="kgIcon-hero-{{$name}}"
+    id="kgIcon-majestic-{{$name}}"
     data-group="kgicons"
     data-name="majestic:{{$name}}"
     width="{{$size}}"
