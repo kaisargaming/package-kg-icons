@@ -1,4 +1,4 @@
-Array.prototype.forEachSync = function(fn, done) {
+Object.prototype.forEachSync = function(fn, done) {
     if(!this.length) return done(null);
     arr = this.reverse();
   
