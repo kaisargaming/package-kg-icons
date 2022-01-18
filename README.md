@@ -8,7 +8,7 @@
 
 ## Available Icon sets
 
-These icon sets are available through the component, use it with `<x-kg::hero|majestic|etc></x-kg::hero>`
+These icon sets are available through the component, use it with `<x-kgicon::hero|majestic|etc></x-kgicon::hero>`
 
 - `hero` Heroicons
 - `majes` Majesticicons

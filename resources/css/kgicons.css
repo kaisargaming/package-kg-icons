@@ -1,0 +1,16 @@
+svg.kg-icon-thick path {
+    stroke-width: 4;
+}
+
+svg.kg-icon-base path {
+    stroke-width: 2;
+}
+
+svg.kg-icon-thin path {
+    stroke-width: 1;
+}
+
+svg.kg-icon-black path {
+    stroke-width: 6;
+}
+
