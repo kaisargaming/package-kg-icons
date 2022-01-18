@@ -1,0 +1,9 @@
+[submodule "resources/upstreams/heroicons"]
+	path = resources/upstreams/heroicons
+	url = https://github.com/tailwindlabs/heroicons
+[submodule "resources/upstreams/majesticons"]
+	path = resources/upstreams/majesticons
+	url = https://github.com/halfmage/majesticons
+[submodule "resources/upstreams/remixicon"]
+	path = resources/upstreams/remixicon
+	url = https://github.com/Remix-Design/remixicon

@@ -19,3 +19,11 @@ These icon sets are available through the component, use it with `<x-kgicon::her
 ## Props
 
 
+## Upstreams
+
+Icon providers used in this component stored as submodule repo inside `/resources/upstreams/`
+
+- https://github.com/tailwindlabs/heroicons
+- 
+- https://github.com/Remix-Design/remixicon
+
