@@ -24,6 +24,13 @@ These icon sets are available through the component, use it with `<x-kgicon::her
 Icon providers used in this component stored as submodule repo inside `/resources/upstreams/`
 
 - https://github.com/tailwindlabs/heroicons
-- 
+- https://github.com/halfmage/majesticons
 - https://github.com/Remix-Design/remixicon
 
+## Development tools
+
+There are also development tools to help with development and release.
+
+- Preparing icon file to be used inside `resources/providers`
+- Create list of icon name which will then published as assets in `resources/js/kgicons.json`
+- Update submodule repo
