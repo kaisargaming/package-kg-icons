@@ -1,18 +1,3 @@
-Object.prototype.forEachSync = function(fn, done) {
-    if(!this.length) return done(null);
-    arr = this.reverse();
-  
-    function next(err) {
-      if(err) return done(err);
-      var elem = arr.pop();
-      if(!elem) return done(err);
-  
-      return fn(elem, next);
-    }
-  
-    return fn(arr.pop(), next);
-  };
-
 /**
  * Fetch and replacing the icons during the event
  * DOMContentLoaded with window.fetch.
@@ -66,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Load additional css into the html file
         getKgIconsStyle()
         // Insert path to all svg elements marked with `data-group`
-        kgIcons.forEachSync(kgIcon => {       
+        kgIcons.forEach(async kgIcon => {       
             let iconPropName = kgIcon.dataset.name // hero:o:user 
             let iconPropMerged = iconPropName.split(":").join("/") // => /kgicons/ic/hero/o/user.svg
             let iconPath = `/kgicons/ic/${iconPropMerged}.svg`
             
-                window.fetch(request(iconPath))
+               await window.fetch(request(iconPath))
                     .then(res => {
                         if (!res.ok) {
                                 throw new Error('Failed to fetch KgIcon, got response with ', res.status);
