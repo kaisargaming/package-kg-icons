@@ -1,0 +1,26 @@
+{
+    "name": "kg/icons",
+    "description": "Laravel package of some sets of SVG Icons prepared in blade template for Kgaming Internal use",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaisargaming",
+            "email": "kaisargamingdev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kg\\Icons\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kg\\Icons\\KgIconsServiceProvider"
+            ]
+        }
+    }
+}
