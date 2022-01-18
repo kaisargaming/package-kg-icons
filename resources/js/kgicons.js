@@ -28,8 +28,8 @@ const insertPath = (svgText, el) => {
     // Standard style
     el.style.display = 'inline'
 
-    newEl.querySelectorAll('path').forEach(p => {
-        el.appendChild(p)
+    newEl.querySelector('svg').childNodes.forEach(c => {
+        el.appendChild(c)
     })
 }
 
