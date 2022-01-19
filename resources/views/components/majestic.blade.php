@@ -6,9 +6,9 @@
 
 @if(substr($name,0,1) == 's')
     @php 
-        $fill2 = $fill
-        $fill = $stroke
-        $stroke = $fill2
+        $fill2 = $fill;
+        $fill = $stroke;
+        $stroke = $fill2;
     @endphp
 @endif
 
