@@ -4,6 +4,14 @@
     'fill' => 'none' ,
     'stroke' => 'currentColor' ])
 
+@if(substr($name,0,1) == 's')
+    @php 
+        $fill2 = $fill
+        $fill = $stroke
+        $stroke = $fill2
+    @endphp
+@endif
+
 <svg
     id="kgIcon-hero-{{$name}}"
     data-group="kgicons"
